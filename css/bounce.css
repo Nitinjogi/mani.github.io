@@ -1,0 +1,70 @@
+body{
+	width: 1000%;
+	height: 100%;
+	margin: 0;
+	background: #fff;
+	overflow-y: hidden;
+}
+
+.bounce{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100;
+	color: #03A9FA;
+	height: 100%;
+	font: bold 6rem 'Abril',cursive;
+	white-space: nowrap;
+
+}
+
+.letter{
+	animation: bounce 0.75s cubic-bezier(0.05,0,0.2,1) infinite alternate;
+	display: inline-block;
+	margin-top:0.5rem;
+	padding-top: 100px; 
+	margin-right:10px;
+	text-shadow: rgba(1,87,155)0 0 0.05rem;
+	font: normal 500 6rem 'Abril',cursive;
+
+
+
+}
+
+.letter: nth-last-of-type(1) {
+	animation-delay: -0.8333333s;
+}
+
+.letter: nth-last-of-type(2) {
+	animation-delay: -0.8333333s;
+
+}
+
+.letter: nth-last-of-type(3) {
+	animation-delay: -0.166666667s;
+}
+
+.letter: nth-last-of-type(4) {
+	animation-delay: -0.025s;
+	}
+
+.letter: nth-last-of-type(5) {
+	animation-delay: -0.03333333s;
+}
+
+
+.letter: nth-last-of-type(6) {
+	animation-delay: -0.416666667s;
+
+}
+
+@keyframes bounce {
+	0%{
+		transform: translate3d(0,0,0);
+		text-shadow: rgba(1,87,155)0 0 0.05rem;
+	}
+	100%{
+		transform: translate3d(0,-1rem,0);
+		text-shadow: rgba(1,87,155)0 1rem 0.35rem;
+	}
+}
